@@ -68,3 +68,10 @@ footer{
 .pie{
     background: #F4E06D;
 }
+
+@media (max-width: 768px){
+    main{
+        background: #FAEA48;
+        flex-direction: column;
+    }
+}
