@@ -75,3 +75,9 @@ footer{
         flex-direction: column;
     }
 }
+
+@media (max-width: 560px){
+    .menu{
+        flex-direction: column;
+    }
+}
