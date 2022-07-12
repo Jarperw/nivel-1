@@ -1,0 +1,225 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background-image: url(../img/header2.jpg);
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.log {
+    flex: 0.5 1 auto;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 0;
+}
+
+.log:hover {
+    background-image: url(../img/logo2.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    flex: 4 1 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+i {
+    margin: auto;
+    padding: 5px;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+    flex: 0.5 1 auto;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    padding: 0;
+    margin: 0;
+}
+
+.principal {
+    background: #0001;
+    margin: 0 5%;
+    padding-bottom: 3vh;
+}
+
+h1 {
+    color: #f6763f;
+    opacity: 0.7;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+main {
+    /* background: #ccc; */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3 1 auto;
+    padding: 0.2%;
+}
+
+article {
+    background: #1363DF;
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cultura{
+    background-image: url(../img/sakura.jpg);
+    background-size: cover; 
+}
+.gastronomia{
+    background-image: url(../img/comida.jpg);
+    background-size: cover; 
+}
+.turismo{
+    background-image: url(../img/fuji.jpg);
+    background-size: cover; 
+}
+.noche{
+    background-image: url(../img/noche.jpg);
+    background-size: cover; 
+}
+
+article h4{
+    color:#FAEA48;
+}
+article h2{
+    background-color: #F37878;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* article p{
+
+} */
+
+.large {
+    background: #47B5FF;
+    flex: 1 1 100%;
+}
+
+aside {
+    background: #ccc;
+    flex: 2 1 auto;
+    text-align: center;
+}
+
+.publicidad {
+    padding: 0;
+    margin: 0;
+}
+
+.publicidad p{
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background: #eee;
+    text-align: center;
+}
+
+/* .pie {
+    background: #F4E06D;
+} */
+
+@media (max-width: 1024px) {
+    .principal {
+        margin: 0 3%;
+        font-size: small;
+        letter-spacing: -1px;
+        padding-bottom: 4%;
+    }
+
+    main {
+        background: #FAEA48;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 769px) {
+    header {
+        height: 70vh;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .log:hover{
+        background-size: contain;
+    }
+
+    span{
+        display: none;
+    }
+
+    .principal {
+        margin: 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    aside {
+        background: #F37878;
+    }
+
+    .publicidad {
+        background: #FAD9A1;
+    }
+}
